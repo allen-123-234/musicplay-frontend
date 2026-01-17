@@ -1,14 +1,40 @@
 <!DOCTYPE html>
-<html lang="zh-Hant">
+<html lang="zh-TW">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MusicPlay</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header>
+    <h1>MusicPlay</h1>
+  </header>
 
-  <h1>?�� MusicPlay 歌曲?�表</h1>
-  <ul id="song-list"></ul>
+  <main>
+    <section id="songs-section">
+      <h2>歌曲列表</h2>
+      <ul id="song-list">
+        <!-- 歌曲會由 script.js 自動填入 -->
+      </ul>
+    </section>
+
+    <section id="login-section">
+      <h2>登入</h2>
+      <input type="text" id="login-username" placeholder="使用者名稱">
+      <input type="password" id="login-password" placeholder="密碼">
+      <button id="login-btn">登入</button>
+      <p id="login-message"></p>
+    </section>
+
+    <section id="register-section">
+      <h2>註冊</h2>
+      <input type="text" id="register-username" placeholder="使用者名稱">
+      <input type="password" id="register-password" placeholder="密碼">
+      <button id="register-btn">註冊</button>
+      <p id="register-message"></p>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
